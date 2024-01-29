@@ -1,0 +1,9 @@
+
+.history-page {
+    margin-left: 1rem; /* Igualar al ancho de la barra lateral por defecto */
+    width: 100%;
+    background: linear-gradient(90deg, rgba(23, 23, 26, 1) 44%, rgba(24, 24, 24, 1) 100%);
+    min-height: 100vh;
+    padding: .65rem 0;
+    padding-bottom: 5rem;
+}

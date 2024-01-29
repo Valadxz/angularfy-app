@@ -1,0 +1,14 @@
+
+.home-wrapper {
+    margin-left: 14rem; /* Igualar al ancho de la barra lateral por defecto */
+
+    background: linear-gradient(90deg, rgba(23, 23, 26, 1) 44%, rgba(24, 24, 24, 1) 100%);
+    min-height: 100vh;
+}
+
+/* Media Query para ajustar estilos en dispositivos móviles */
+@media (max-width: 768px) {
+    .home-wrapper {
+        margin-left: 68px; /* Eliminar el margen a la izquierda en dispositivos móviles */
+    }
+}

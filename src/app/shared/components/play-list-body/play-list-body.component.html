@@ -1,0 +1,47 @@
+<div class="play-list-body">
+    <ul class="play-list-table-header">
+        <li (click)="changeSort('name')">Título </li>
+        <li></li>
+        <li (click)="changeSort('album')">Álbum </li>
+        <li (click)="changeSort('year')">Año </li>
+        <li>Duración</li>
+    </ul>
+    <ul class="play-list-rows" *ngFor="let track of tracks | orderList:optionSort.property:optionSort.order">
+
+      <li class="track-name">
+        <div class="buttons-player" >
+            <button (click)="sendPlay(track)" *ngIf="true" class="play-btn">
+                <i class="uil " [ngClass]="{'uil-play':true}"></i>
+            </button>
+            <button *ngIf="false" class="play-btn">
+                <i class="uil uil-play"></i>
+            </button>
+        </div> 
+        <ng-container *ngTemplateOutlet="coverSection;context:{track:track}"></ng-container>
+      </li>
+        <li class="track-name">
+             </li>
+        <li class="track-name-opacity">
+            {{track.album}}
+        </li>
+        <li class="track-name-opacity">
+            {{track.year}}
+        </li>
+        <li class="track-name-opacity">
+            {{track.dur}}
+        </li>
+    </ul>
+</div>
+
+<!--template del cover-->
+<ng-template #coverSection let-track="track">
+
+    <div class="cover-section">
+        <img appImgBroken class="cover-track" [src]="track.cover" [alt]="track.name">
+        <div class="cover-info">
+            <div class="name-track">{{track.name}}</div>
+            <div class="name-track-details">{{track.artist.name}}</div>
+        </div>
+    </div>
+
+</ng-template>

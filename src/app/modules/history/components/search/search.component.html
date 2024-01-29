@@ -1,0 +1,7 @@
+<div class="search-component">
+    
+    <i class="uil uil-search"></i>
+    <input (ngModelChange)="callSearch($event)" [(ngModel)]="src" type="text" placeholder="¿Qué quieres escuchar?">
+    <br><br>
+    <div>Resultado: {{src}}</div>
+</div>

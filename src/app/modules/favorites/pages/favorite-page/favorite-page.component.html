@@ -1,0 +1,14 @@
+<div class="favorites-page">
+    <app-play-list-header></app-play-list-header>
+
+
+  <div class="section--generic">
+    <div class="section--generic__player--zone">
+        <ul class="player--list" [ngClass]="{'card-big':mode === 'big'}">
+            <li *ngFor="let track of listResults$ | async">
+                <app-card-player [track]="track" [mode]="mode"></app-card-player>
+            </li>
+        </ul>
+    </div>
+</div>
+</div>

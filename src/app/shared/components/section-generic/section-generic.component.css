@@ -1,0 +1,37 @@
+.section--generic {
+  margin-bottom: 2rem;
+}
+
+.section--generic__player--zone .player--list {
+  display: grid;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 1.3em;
+  width: 100%;
+}
+
+/* Estilos base para pantallas más pequeñas */
+.section--generic__player--zone .player--list.card-big {
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.section--generic__player--zone .player--list.card-small {
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.section--generic__title {
+  font-size: small;
+}
+
+/* Media Query para ajustar estilos en pantallas más grandes */
+@media (min-width: 768px) {
+  .section--generic__player--zone .player--list.card-big,
+  .section--generic__player--zone .player--list.card-small {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .section--generic__title {
+      font-size: medium; /* Ajusta el tamaño del título para pantallas más grandes */
+  }
+}

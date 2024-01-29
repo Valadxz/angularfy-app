@@ -1,0 +1,133 @@
+/* Estilos base para pantallas grandes */
+.play-list-header {
+    display: flex;
+    height: 18rem;
+    width: 100%;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    background: linear-gradient(to top, #4d3795, #483489);
+}
+.bg{
+    margin: 0;
+    background: linear-gradient(to bottom, #4d3795 15%, #000000);
+}
+.content-text {
+    padding: 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.image{
+    width: 100%;
+    border-radius: 3%;
+}
+.cover {
+    position: relative;
+    width: 17rem;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.cover .cover-mock {
+    height: 100%;
+    width: 18rem;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 5.5rem;
+    background: linear-gradient(45deg, #4a32f4, #fbccff);
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3); /* Sombra con desplazamiento horizontal de 5px, desplazamiento vertical de 5px, desenfoque de 10px y color RGBA */
+    border-radius: 3%;
+}
+
+.content-text .title,
+.content-text .sub-title {
+    margin: 0;
+    font-weight: 600;
+}
+
+.content-text .title {
+    font-size: 6rem;
+    letter-spacing: -7px;
+}
+
+.content-text .small-text {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.content-text .count-tracks {
+    font-weight: 300;
+    opacity: .7;
+    padding-left: .5rem;
+}
+
+/* Estilos para pantallas pequeñas (móviles) */
+@media screen and (max-width: 767px) {
+    .play-list-header {
+        height: auto; /* Altura automática para ajustarse al contenido */
+        padding: 1rem;
+    }
+
+    .cover {
+        width: 100%; /* Ancho completo para adaptarse a la pantalla */
+        padding: 1rem;
+    }
+
+    .cover .cover-mock {
+        width: 100%; /* Ancho completo para adaptarse a la pantalla */
+        font-size: 3rem; /* Tamaño de fuente reducido para dispositivos móviles */
+    }
+
+    .content-text .title {
+        font-size: 3rem; /* Tamaño de fuente reducido para dispositivos móviles */
+        letter-spacing: normal; /* Espaciado normal para mejorar la legibilidad */
+    }
+}
+.section--generic {
+    
+    margin-bottom: 2rem;
+  }
+  
+  .section--generic__player--zone .player--list {
+    
+    display: grid;
+    list-style: none;
+    margin: 0;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+    margin: auto;
+    gap: 1.3em;
+    width: 80%;
+    text-align: center;
+    
+  }
+  
+  /* Estilos base para pantallas más pequeñas */
+  .section--generic__player--zone .player--list.card-big {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+  
+  .section--generic__player--zone .player--list.card-small {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+  
+  .section--generic__title {
+    font-size: small;
+  }
+  
+  /* Media Query para ajustar estilos en pantallas más grandes */
+  @media (min-width: 768px) {
+    .section--generic__player--zone .player--list.card-big,
+    .section--generic__player--zone .player--list.card-small {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+  
+    .section--generic__title {
+        font-size: medium; /* Ajusta el tamaño del título para pantallas más grandes */
+    }
+  }
+  

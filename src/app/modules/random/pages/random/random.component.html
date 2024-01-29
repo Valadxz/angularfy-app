@@ -1,0 +1,24 @@
+<div class="play-list-header">
+    <div class="cover">
+      <div class="cover-mock">
+        <img class="image" [src]="uniqueArtist?.artist.avatar" alt="">
+      </div>
+    </div>
+    <div class="content-text">
+      <div class="small-text">Artista aleatorio</div>
+      <h1 class="title">{{ uniqueArtist?.artist.name }}</h1>
+    </div>
+  </div>
+  
+<div class="bg">
+  <div class="section--generic">
+    <div class="section--generic__player--zone">
+      <ul class="player--list" [ngClass]="{'card-big': mode === 'big'}">
+        <li *ngFor="let track of listResults$ | async">
+          <app-card-player [track]="track" [mode]="mode"></app-card-player>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+  

@@ -1,0 +1,97 @@
+.play-list-body {
+    padding: 1rem;
+}
+
+.play-list-table-header {
+    width: 100%;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0;
+    padding: 10px;
+    font-size: 50%;
+    letter-spacing: 1px;
+    border-bottom: solid 1px var(--color-2);
+    padding-bottom: .5rem;
+}
+
+.play-list-table-header li {
+    text-transform: uppercase;
+    color: var(--color-4);
+    opacity: .7;
+}
+
+@media (min-width: 768px) {
+    .play-list-table-header {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+.play-list-rows {
+    width: 100%;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0;
+    padding: 1rem 0 0 0;
+}
+
+@media (min-width: 768px) {
+    .play-list-rows {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+.play-list-rows .track-name-opacity {
+    opacity: .7;
+    font-weight: 300;
+}
+
+.cover-section {
+    display: flex;
+    padding: 0;
+}
+
+.cover-section .cover-track {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    z-index: 1; /* Elevación más baja */
+}
+
+.cover-section .cover-info {
+    padding: 0 1rem;
+}
+
+.cover-section .cover-info .name-track-details {
+    font-size: 80%;
+    opacity: .7;
+}
+
+@media (max-width: 768px) {
+    .cover-section .cover-info {
+        padding: 0;
+    }
+}
+.buttons-player {
+    display: none; /* Ocultar el buttons-player por defecto */
+    position: absolute; /* Asegurar que el buttons-player esté posicionado correctamente */
+    margin-top: 3rem;/* Centrar verticalmente */
+    left: 23%; /* Centrar horizontalmente */
+    z-index: 1000;
+    text-align: center;
+  }
+  
+  .track-name:hover .buttons-player {
+    display: flex; /* Mostrar el buttons-player cuando se hace hover */
+  }
+
+ .buttons-player .play-btn {
+    color: var(--color-4);
+    border: 0;
+    font-size: 1.15rem;
+    border-radius: 50%;
+    background-color: var(--color-1);
+    width: 45px;
+    height: 45px;
+}

@@ -1,0 +1,71 @@
+.side-bar {
+    width: 12rem;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: .5rem 1rem;
+    background-color: #1d1d1d; /* Color de fondo para mayor visibilidad */
+    z-index: 0; /* Asegura que la barra lateral esté por encima del contenido */
+}
+
+.side-bar__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    opacity: .8;
+}
+
+.side-bar__list .list-label {
+    font-size: 90%;
+    font-weight: 500;
+}
+
+.side-bar__list .list-wrapper-item {
+    font-size: var(--font-size-1);
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    padding: .5rem 0; /* Espaciado para mejorar la apariencia en dispositivos pequeños */
+}
+
+.side-bar__list .list-wrapper-item .uil {
+    font-size: var(--font-size-3);
+    padding-right: .5rem;
+}
+.side-bar__separator {
+    margin: 1rem 0;
+}
+
+.side-bar__separator.line-separator {
+    border-bottom: solid 1px var(--color-2);
+}
+
+.side-bar__list.list-three .list-wrapper-item {
+    padding: .25rem 0;
+}
+
+.side-bar__list li {
+    cursor: pointer;
+}
+
+/* Media Query para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+    .side-bar {
+        width: 35px; /* O el ancho deseado para pantallas más pequeñas */
+        height: 87%;
+        position: fixed;
+        padding: 1rem; /* Espaciado adicional para mejorar la apariencia */
+        z-index: 1;
+        text-align: center;
+    }
+
+    .mov {
+        display: none;
+    }
+
+    .side-bar__list .list-wrapper-item {
+        padding: .5rem 0;
+    }
+}

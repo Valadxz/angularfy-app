@@ -1,0 +1,27 @@
+.search-component {
+    padding: 1rem 1.5rem;
+    position: relative;
+    display: inline-block;
+    border: 2px white;
+}
+
+.search-component i {
+    position: absolute;
+    top: 30%;
+    left: 40px; /* Ajusta según sea necesario */
+    transform: translateY(-50%);
+    color: #888; /* Color del icono */
+  }
+
+.search-component input {
+    border: 10px white;
+    border-radius: 3rem;
+    height: 40px;
+    width: 20rem;
+    padding: 0 .75rem;
+    font-size: 80%;
+    color: gray;
+    background-color: rgb(47, 47, 47);
+    padding-left: 35px; 
+
+}
