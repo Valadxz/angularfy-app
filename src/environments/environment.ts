@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  api: 'https://api-angularfy.vercel.app/api/1.0'
+  api: 'https://api-angularfy.onrender.com/api/1.0'
 };
 
 /*
