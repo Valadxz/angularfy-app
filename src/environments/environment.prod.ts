@@ -1,4 +1,4 @@
-export const environment = {
-  production: true, 
-  api: 'https://api-angularfy.onrender.com:10000/api/1.0'
-};
+export const enviroment = {
+    production: false,
+    api: 'https://api-angularfy.onrender.com/api/1.0'
+}
