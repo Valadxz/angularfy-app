@@ -3,8 +3,8 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false,
-  api: 'https://api-angularfy.onrender.com/api/1.0'
+  production: true,
+  api: 'https://api-angularfy.onrender.com:10000/api/1.0'
 };
 
 /*
