@@ -4,7 +4,7 @@
 <h1>Desarrollo FrontEnd con Angular</h1>
 <p>Aplicación desarrollada en Angular y Node.js que simula las funciones básicas de Spotify, tales como reproductor de audio y búsqueda por canción, albúm o artista. </b></p>
 
-<h4> <a href=https://angularfy-app.netlify.app>Ver demostración</a> <span> · </span> <a href="https://github.com/Valadxz/https://github.com/Valadxz//blob/master/README.md"> Documentación </a> <span> · </span> <a href="https://github.com/Valadxz/https://github.com/Valadxz//issues"> Reportar Bug </a> <span> · </span> 
+<h4> <a href=https://angularfy-app.vercel.app>Ver demostración</a> <span> · </span> <a href="https://github.com/Valadxz/https://github.com/Valadxz//blob/master/README.md"> Documentación </a> <span> · </span> <a href="https://github.com/Valadxz/https://github.com/Valadxz//issues"> Reportar Bug </a> <span> · </span> 
 
 
 </div>
